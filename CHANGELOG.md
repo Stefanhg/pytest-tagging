@@ -1,3 +1,15 @@
+## v1.4.2 (2024-04-07)
+
+### Refactor
+
+- simplify code a bit by getting rid of lists of lists (#17)
+
+## v1.4.1 (2024-02-15)
+
+### Fix
+
+- cut release
+
 ## v1.4.0 (2024-01-18)
 
 ### Feat

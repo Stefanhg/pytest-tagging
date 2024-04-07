@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytest_tagging"
-version = "1.4.0"
+version = "1.4.2"
 description = "a pytest plugin to tag tests"
 authors = ["Sergio Castillo <s.cast.lara@gmail.com>"]
 readme = "README.md"
@@ -23,13 +23,11 @@ ruff = "*"
 [tool.poetry.group.dev.dependencies]
 py = "^1.11.0"
 
-[tool.black]
-line-length = 120
-target_version = ["py311"]
-
 [tool.ruff]
 target-version = "py311"
 line-length = 120
+
+[tool.ruff.lint]
 select = [
     "C9",  # mccabe
     "E",   # pycodestyle error
@@ -42,7 +40,7 @@ select = [
     "N",   # pep8-naming
 ]
 ignore = [
-    "E501",   # line length (black handles it)
+    "E501", # line length (black handles it)
 ]
 
 [tool.pytest.ini_options]
@@ -55,10 +53,7 @@ addopts = """
 """
 
 [tool.coverage.run]
-omit = [
-    "tests/*",
-    "/tmp/*"
-]
+omit = ["tests/*", "/tmp/*"]
 
 [tool.coverage.report]
 source = "pytest_tagging"
@@ -66,7 +61,7 @@ fail_under = 90
 exclude_lines = ["if TYPE_CHECKING:", "pragma: no cover"]
 
 [tool.commitizen]
-version = "1.4.0"
+version = "1.4.2"
 version_files = ["pyproject.toml:version"]
 tag_format = "v$version"
 
