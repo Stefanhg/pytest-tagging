@@ -278,3 +278,8 @@ def test_no_tags(pytester):
     pytester.makepyfile("def test_pass(): pass")
     res = pytester.runpytest()
     res.assert_outcomes(passed=1)
+
+
+def test_tester():
+    """Just a unrelated test"""
+    pass
