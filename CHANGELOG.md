@@ -1,3 +1,27 @@
+## v1.5.3 (2024-08-31)
+
+### Fix
+
+- bump version with cz (#25)
+
+## v1.5.2 (2024-04-08)
+
+### Fix
+
+- maintain test collection order (#22)
+
+## v1.5.1 (2024-04-07)
+
+### Fix
+
+- run all tests when no tags provided and option is not set (#21)
+
+## v1.5.0 (2024-04-07)
+
+### Feat
+
+- added `--exclude-tags` option (#18)
+
 ## v1.4.2 (2024-04-07)
 
 ### Refactor
